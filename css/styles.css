@@ -28,7 +28,6 @@ img {
   height: auto;
 }
 body {
-  /* font-family: 'Raleway', sans-serif; */
   font-family: 'Roboto', 'Raleway', sans-serif;
   /* фон білий #FFFFFF */
   /* вторичний колір фону #2196F3 */
@@ -45,8 +44,7 @@ body {
 }
 nav,
 .site-nav,
-.auth-nav,
-.container nav {
+.auth-nav {
   display: flex;
   justify-content: space-between;
 }
@@ -66,6 +64,7 @@ nav,
 header {
   border-bottom: 1px solid #ececec;
   background: var(--for-black-color);
+  background-attachment: scroll;
 }
 header .logo {
   margin-right: 94px;
@@ -73,7 +72,7 @@ header .logo {
   display: flex;
   align-items: center;
 }
-.site-nav .link {
+.site-nav__link {
   color: var(--title-text-color);
   margin-right: 50px;
   display: inline-block;
@@ -94,13 +93,13 @@ header .logo {
 .auth-nav li:last-child a {
   margin: 0;
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .link:hover::after {
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link:hover::after {
   color: var(--accent-color);
   opacity: 1;
 }
-.site-nav .link::after {
+.site-nav__link::after {
   position: absolute;
   content: '';
   display: inline-block;
@@ -112,7 +111,7 @@ header .logo {
   background-color: #2196f3;
   opacity: 0;
 }
-.auth-nav .link {
+.auth-nav__link {
   font-family: Roboto;
   color: var(--primary-text-color);
   margin-right: 50px;
@@ -128,12 +127,12 @@ header .logo {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav__link:hover,
+.auth-nav__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-.auth-img {
+.auth-nav__img {
   margin-right: 10px;
 }
 /* Герой -------------------------------------*/
