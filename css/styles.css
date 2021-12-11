@@ -453,13 +453,13 @@ header .logo {
   align-items: center;
   margin-bottom: 30px;
 }
-.social-link {
+.social__item {
   margin-right: 10px;
 }
-.social-link:last-child {
+.social__item:last-child {
   margin-right: 0;
 }
-.btn-soc {
+.social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -471,19 +471,19 @@ header .logo {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-icon {
+.social__icon {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-icon:focus,
-.soc-icon:hover,
-.btn-soc:focus,
-.btn-soc:hover {
+.social__icon:focus,
+.social__icon:hover,
+.social__link:focus,
+.social__link:hover {
   background-color: var(--accent-color);
   fill: #fff;
 }
-.connect {
+.social__link--darker {
   background: rgba(255, 255, 255, 0.1);
 }
 /* Постійні клієнти --------------------------*/
