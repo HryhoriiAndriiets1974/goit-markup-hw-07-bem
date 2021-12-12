@@ -29,8 +29,6 @@ img {
 }
 body {
   font-family: 'Roboto', 'Raleway', sans-serif;
-  /* фон білий #FFFFFF */
-  /* вторичний колір фону #2196F3 */
   background: var(--for-black-color);
   color: var(--title-text-color);
   font-size: normal;
@@ -38,8 +36,6 @@ body {
 .container {
   padding: 0 15px;
   width: 1200px;
-  /* для розмітки ------------------------------*/
-  /* border: 1px solid red; */
   margin: 0 auto;
 }
 
@@ -91,9 +87,6 @@ header .logo {
   line-height: 1.143;
   cursor: pointer;
   position: relative;
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav li:last-child a {
@@ -124,7 +117,6 @@ header .logo {
   font-family: Roboto;
   color: var(--primary-text-color);
   margin-right: 50px;
-  /* ---------was in the past----block- Error #1---- */
   display: flex;
   padding: 30.5px 0;
   font-weight: 500;
@@ -148,9 +140,6 @@ header .logo {
 .hero {
   text-align: center;
   padding: 200px 0;
-  /* outline: 1px solid red; */
-
-  /* ------------------------------------- Error #2---- */
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
     url(../images/new-foto.jpg);
   max-width: 1600px;
@@ -216,14 +205,12 @@ header .logo {
 
 /* Переваги ---------------------------------*/
 .feature {
-  /* outline: 1px solid blue; */
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
 }
 .feature__item {
-  /* outline: 1px solid gold; */
   flex-basis: calc(100% / 4)-30px;
   margin-right: 30px;
 }
@@ -256,7 +243,6 @@ header .logo {
 }
 /* Чим ми займаэмось -------------------------*/
 .doing {
-  /* outline: 1px solid blue; */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -264,7 +250,6 @@ header .logo {
   padding-bottom: 94px;
 }
 .doing__item {
-  /* outline: 1px solid gold; */
   flex-basis: calc(100% / 3)-30px;
   margin-right: 30px;
   position: relative;
@@ -291,7 +276,6 @@ header .logo {
 }
 /* Фільтр наших робіт ------------------------*/
 .btns {
-  /* outline: 1px solid blue; */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -299,7 +283,6 @@ header .logo {
   justify-content: center;
 }
 .btns__button {
-  /* outline: 1px solid gold; */
   margin: 0 8px 50px 0;
 }
 .btns__button {
@@ -324,7 +307,6 @@ header .logo {
 }
 /* Наші роботи -------------------------------*/
 .work-list {
-  /* outline: 1px solid blue; */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -332,7 +314,6 @@ header .logo {
   flex-wrap: wrap;
 }
 .work-list__item {
-  /* outline: 1px solid gold; */
   flex-basis: calc(100% / 3)-30px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -370,7 +351,6 @@ header .logo {
   height: 294px;
   top: 0;
   left: 0;
-  /* outline: 1px solid gold; */
   overflow: hidden;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -396,13 +376,11 @@ header .logo {
 }
 
 .work-list__item:hover {
-  /* transform: translateY(-100%); */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* Наша команда -------------------------------*/
 .team {
-  /* outline: 1px solid blue; */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -411,18 +389,14 @@ header .logo {
   padding-bottom: 94px;
 }
 .team__item {
-  /* outline: 1px solid gold; */
   flex-basis: calc(100% / 4)-30px;
   margin-right: 30px;
   text-align: center;
   background: var(--for-black-color);
-  /* Shadow */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__item:last-child {
   margin-right: 0;
@@ -444,7 +418,6 @@ header .logo {
 .team__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  /* transform: translateY(-100%); */
 }
 /* Соціальні мережі --------------------------*/
 .social {
@@ -467,14 +440,10 @@ header .logo {
   align-items: center;
   border-radius: 50%;
   fill: #afb1b8;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__icon {
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__icon:focus,
 .social__icon:hover,
@@ -518,9 +487,7 @@ header .logo {
   border: 1px solid #afb1b8;
   background: var(--for-black-color);
   fill: #afb1b8;
-  transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client__link:focus,
 .client__link:hover {
@@ -537,9 +504,7 @@ header .logo {
   font-size: 14px;
   line-height: 1.714;
   margin-top: 20px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo__text--light {
   color: #fff;
@@ -555,9 +520,7 @@ header .logo {
 .footer-contact .mailto,
 .footer-contact .tel {
   color: rgba(255, 255, 255, 0.6);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .end {
   display: flex;
@@ -587,10 +550,7 @@ header .logo {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -623,7 +583,6 @@ header .logo {
 .exit:hover {
   stroke: #2196f3;
   stroke-opacity: 1;
-  /* stroke="#000" stroke-opacity=".1" */
 }
 /* -----------------------------------------------------Форма 1 */
 .form {
@@ -748,22 +707,6 @@ header .logo {
   appearance: none;
   position: absolute;
 }
-/* .form__icon-check {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 4px;
-  margin-left: 12px;
-  margin-right: 9px;
-} */
-/* .form__conditions:checked + .form__icon-check {
-  background-image: url('../images/check.svg');
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-} */
 .form__icon-check {
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
@@ -807,12 +750,12 @@ header .logo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -------------------------------------Форма футер */
-.form-footer {
+.form-f {
   padding-top: 16px;
   margin-left: 93px;
   position: relative;
 }
-.footer-input {
+.form-f__input {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -831,24 +774,23 @@ header .logo {
   appearance: none;
 }
 
-.footer-input:hover,
-.footer-input:focus {
+.form-f__input:hover,
+.form-f__input:focus {
   outline: 1px solid var(--accent-color);
   color: #e5e5e5;
   transition-property: outline, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* background: var(--accent-color); */
 }
 
-.title-form-footer {
+.form-f__title {
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 15px;
 }
-.form-btn-footer {
+.form-f__btn {
   font-weight: bold;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -864,17 +806,10 @@ header .logo {
   cursor: pointer;
   margin-left: 12px;
 }
-.icon-subscribe {
+.form-f__icon {
   position: absolute;
   right: 20px;
   bottom: 40px;
   fill: #fff;
   cursor: pointer;
 }
-.cocntact-cond {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-/* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
