@@ -541,7 +541,7 @@ header .logo {
   color: var(--for-black-color);
   margin-left: 70px;
 }
-/* --------------------backdrop-end--------------------------Modalka */
+/* --------------------backdrop-end-modal--------------------Modalka */
 .backdrop {
   position: fixed;
   top: 0;
@@ -573,14 +573,14 @@ header .logo {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.exit {
+.modal__exit {
   position: absolute;
   top: 8px;
   left: 490px;
   stroke: #000;
   stroke-opacity: 0.1;
 }
-.exit:hover {
+.modal__exit:hover {
   stroke: #2196f3;
   stroke-opacity: 1;
 }
