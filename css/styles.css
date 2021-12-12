@@ -632,7 +632,7 @@ header .logo {
   /* outline: 1px solid gold; */
   padding: 40px;
 }
-.form-title {
+.form__title {
   font-weight: bold;
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -640,11 +640,11 @@ header .logo {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
 }
-.form-label {
+.form__label {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -652,7 +652,7 @@ header .logo {
   margin-bottom: 4px;
 }
 
-.form-input {
+.form__input {
   border-color: 1px solid rgba(33, 33, 33, 0.2);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -661,7 +661,6 @@ header .logo {
   line-height: calc(16 / 14);
   letter-spacing: 0.01em;
   color: #757575;
-  /* padding: 11px; */
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -669,14 +668,14 @@ header .logo {
   margin-bottom: 10px;
   cursor: pointer;
 }
-.form-input:hover,
-.form-input:focus,
-.form-input:focus + .icon-person,
-.form-input:hover + .icon-person,
-.form-input:focus + .icon-email,
-.form-input:hover + .icon-email,
-.form-input:focus + .icon-phone,
-.form-input:hover + .icon-phone {
+.form__input:hover,
+.form__input:focus,
+.form__input:focus + .form__icon--person,
+.form__input:hover + .form__icon--person,
+.form__input:focus + .form__icon--email,
+.form__input:hover + .form__icon--email,
+.form__input:focus + .form__icon--phone,
+.form__input:hover + .form__icon--phone {
   border-color: var(--accent-color);
   outline: var(--accent-color);
   fill: var(--accent-color);
@@ -688,42 +687,35 @@ header .logo {
   -moz-appearance: none;
   appearance: none;
 }
-.icon-person {
+.form__icon {
   position: absolute;
-  /* display: inline-block; */
+  left: 50px;
+  cursor: pointer;
+  fill: var(--title-text-color);
+}
+.form__icon--person {
   top: 105px;
-  left: 50px;
-  cursor: pointer;
-  fill: var(--title-text-color);
 }
-.icon-email {
-  position: absolute;
+.form__icon--email {
   top: 238px;
-  left: 50px;
-  cursor: pointer;
-  fill: var(--title-text-color);
 }
-.icon-phone {
-  fill: var(--title-text-color);
-  position: absolute;
+.form__icon--phone {
   top: 172px;
-  left: 50px;
-  cursor: pointer;
 }
-.form-input:focus,
-.form-input:hover,
-.icon-person:hover,
-.icon-person:focus,
-.icon-phone:hover,
-.icon-phone:focus,
-.icon-email:hover,
-.icon-email:focus {
+.form__input:focus,
+.form__input:hover,
+.form__icon--person:hover,
+.form__icon--person:focus,
+.form__icon--phone:hover,
+.form__icon--phone:focus,
+.form__icon--email:hover,
+.form__icon--email:focus {
   fill: var(--accent-color);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-.textarea {
+.form__textarea {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -732,19 +724,19 @@ header .logo {
   resize: none;
   margin-bottom: 20px;
 }
-.textarea:hover,
-.textarea:focus {
+.form__textarea:hover,
+.form__textarea:focus {
   outline: 1px solid var(--accent-color);
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.label-check {
+.form__label-check {
   display: inline-block;
   font-size: 14px;
   line-height: calc(24 / 14);
 }
-.conditions {
+.form__conditions {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -756,7 +748,7 @@ header .logo {
   appearance: none;
   position: absolute;
 }
-/* .icon-check {
+/* .form__icon-check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -765,14 +757,14 @@ header .logo {
   margin-left: 12px;
   margin-right: 9px;
 } */
-/* .conditions:checked + .icon-check {
+/* .form__conditions:checked + .form__icon-check {
   background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
 } */
-.icon-check {
+.form__icon-check {
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
   background-color: var(--for-black-color);
@@ -780,7 +772,7 @@ header .logo {
   margin-left: 12px;
   margin-right: 9px;
 }
-.conditions:checked + .icon-check {
+.form__conditions:checked + .form__icon-check {
   background-origin: border-box;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -789,7 +781,7 @@ header .logo {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-btn {
+.form__btn {
   font-weight: bold;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -806,8 +798,8 @@ header .logo {
   margin-left: 124px;
   cursor: pointer;
 }
-.form-btn:hover,
-.form-btn:focus {
+.form__btn:hover,
+.form__btn:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-property: box-shadow;
